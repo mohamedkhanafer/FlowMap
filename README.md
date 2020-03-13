@@ -8,10 +8,10 @@ I thus have decided to continuously build maps using this tool, and share the sm
 ## 1. Global Airplane Routes
 
 ### 1.1 Data Source
-The first map I built is regarding the network of flights around the world. Using www.openflights.org 's data, I was easily able to get the requirements for the map. They hold a collection that contains around 67663 routes between 3321 airports on 548 airlines. You can find one file for the airports' data and one for the routes' data. 
+The first map I built is regarding the network of flights around the world. Using www.openflights.org 's data, I was easily able to get the requirements for the map. They hold a collection that contains around 67663 routes between 3321 airports on 548 airlines. You can find one file for the airports' data and one for the routes' data in the global_airplane_routes folder. 
 
 ### 1.2 Instructions
-As mentionned above, in order to reproduce this map, all you need will be the airports with their geolocalisation. This data is directly provided by Open Flights. The second element you need is the number of flows between the airports. I get these using the routes data and a few lines of code. All these are available in the global_airplane_routes in this repository.
+As mentionned above, in order to reproduce this map, all you need will be the airports with their geolocalisation. This data is directly provided by Open Flights. The second element you need is the number of flows between the airports, representing routes offered by an airline. I get these using the routes data and a few lines of code. All these are available in the global_airplane_routes folder in this repository.
 
 ### 1.3 Final Map
 Here is how the final map looks like:
