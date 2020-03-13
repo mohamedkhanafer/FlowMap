@@ -40,4 +40,19 @@ As in part 1. with the flights' map, here the stations are already provided. The
 ### 1.3 Final Map
 Here is how the final map looks like:
 
-![Animation over years](/montreal_bikes/Montreal_overtime.png)
+![Animation over years](/montreal_bikes/overtime.gif)
+
+You can find each of the maps on the following links:
+
+For 2016: https://flowmap.blue/145uEjRIgjMypkbRFmAN62KQ2lTqaNMdAwIGtzBBTmgI?v=45.507602,-73.582851,11.41,0,0&a=0&b=1&bo=75&c=0&d=0&lt=1&lfm=ALL&col=DarkMint&f=50
+
+For 2017: https://flowmap.blue/14_-aINZKivX3_Ma-_iAyiMKb8BlFHcun9GDTVODSl0g?v=45.507602,-73.582851,11.31,0,0&a=0&b=1&bo=75&c=0&d=0&lt=1&lfm=ALL&col=DarkMint&f=50
+
+For 2018: https://flowmap.blue/1J4Bk4Y0B6cJluyulUMzR0xMAKcz9LO-uUUUH-5qE_iI?v=45.507526,-73.582114,11.41,0,0&a=0&b=1&bo=75&c=0&d=0&lt=1&lfm=ALL&col=DarkMint&f=50
+
+For 2019: https://flowmap.blue/1APu7yHTPZg6j0c8ggbj09ViGseqnvN-TDUEO31WVIqA?v=45.509453,-73.602573,11.02,0,0&a=0&b=1&bo=75&c=0&d=0&lt=1&lfm=ALL&col=DarkMint&f=50
+
+The output should be like these:
+
+![Each year](/montreal_bikes/years.png)
+
