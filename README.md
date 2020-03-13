@@ -24,3 +24,16 @@ You can easily edit the colours,the animations, and clusters on the map itself. 
 
 
 ![Examples](/global_airplane_routes/examples.png)
+
+## 2. Montreal' Bike Sharing System BIXI - Evolution over time
+
+### 2.1 Data Sources
+The goal of these maps here is to look at how the bike sharing network of Montreal has evolved from 2016 to 2019. To do so, I used data provided by www.montreal.bixi.com/en/open-data. I took the month of June of each year to make the comparison the less biased possible. And we can clearly see the expansion of the network over the years. The data for each month as well as for the stations is uploaded in the montreal_bikes.
+
+### 1.2 Instructions
+As in part 1. with the flights' map, here the stations are already provided. The small transformations are needed on the trips data in which I use the code to translate it into data I can use for flowmap. The code is self-explanatory and allows us to get the flows to use in Google Sheet for the map. The code and output are available in the montreal_bikes repository.
+
+### 1.3 Final Map
+Here is how the final map looks like:
+
+![Animation over years](/montreal_bikes/Montreal_overtime.png)
