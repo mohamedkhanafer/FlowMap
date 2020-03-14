@@ -1,7 +1,7 @@
 # Mapping with flowmap
 
 ## Introduction 
-While working on a project in the context of Social Network Analysis, I came accross www.flowmap.blue, a very intuitive tool that easily allows to map in and out degrees for geographical data. 
+While working on a project in the context of Social Network Analysis, I came across www.flowmap.blue, a very intuitive tool that easily allows to map in and out degrees for geographical data. 
 Flowmap only requires 2 things: the latitudes and longitudes of the nodes, and the flows between those nodes with their respective weights.
 I thus have decided to continuously build maps using this tool, and share the small work needed in data preparation in this repository.
 
