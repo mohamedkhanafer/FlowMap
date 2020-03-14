@@ -2,7 +2,7 @@
 
 ## Introduction 
 While working on a project in the context of Social Network Analysis, I came accross www.flowmap.blue, a very intuitive tool that easily allows to map in and out degrees for geographical data. 
-Flowmap only requires 2 things: the latitudes and longitudes of the nodes, and the flows between those nodes with weights of these edges.
+Flowmap only requires 2 things: the latitudes and longitudes of the nodes, and the flows between those nodes with their respective weights.
 I thus have decided to continuously build maps using this tool, and share the small work needed in data preparation in this repository.
 
 ## 1. Global Airplane Routes
@@ -28,16 +28,12 @@ You can easily edit the colours,the animations, and clusters on the map itself. 
 ## 2. Montreal' Bike Sharing System BIXI - Evolution over time
 
 ### 2.1 Data Sources
-The goal of these maps here is to look at how the bike sharing network of Montreal has evolved from 2016 to 2019. To do so, I used data provided by www.montreal.bixi.com/en/open-data. I took the month of June of each year to make the comparison the less biased possible. And we can clearly see the expansion of the network over the years. The data for the stations is uploaded in the montreal_bikes. However, because the trips' original data files are too large, you can download them from here and use the month of June as in the code lines:
-https://montreal.bixi.com/c/bixi/file_db/data_all.file/BixiMontrealRentals2016.zip
-https://montreal.bixi.com/c/bixi/file_db/data_all.file/BixiMontrealRentals2017.zip
-https://montreal.bixi.com/c/bixi/file_db/data_all.file/BixiMontrealRentals2018.zip
-https://montreal.bixi.com/c/bixi/file_db/data_all.file/BixiMontrealRentals2019.zip
+The goal of these maps here is to look at how the bike sharing network of Montreal has evolved from 2016 to 2019. To do so, I used data provided by www.montreal.bixi.com/en/open-data. I took the month of June of each year to make the comparison the less biased possible. And we can clearly see the expansion of the network over the years. The data for the stations is uploaded in the montreal_bikes. However, because the trips' original data files are too large, you can download them from the links posted in the text file and use the month of June as in the lines of code.
 
 ### 1.2 Instructions
 As in part 1. with the flights' map, here the stations are already provided. The small transformations are needed on the trips data in which I use the code to translate it into data I can use for flowmap. The code is self-explanatory and allows us to get the flows to use in Google Sheet for the map. The code and output are available in the montreal_bikes repository.
 
-### 1.3 Final Map
+### 1.3 Final Maps
 Here is how the final map looks like:
 
 <p align="center">
@@ -58,3 +54,10 @@ The individual outputs should be like these:
 
 ![Each year](/montreal_bikes/years.png)
 
+### 1.4 Alternative Analysis 
+For a project, I was analysing this bike system as a Social Network to try to find insights. One way I used flowmap differently this time, is to show specific clusters of flows, rather than comparing them for their weights. I applied community detection using the Louvain algorithm in another tool called Gephi (used for Social Networks). I got 6 distinct clusters that I later mapped in flowmap to be able to visualize them. Here is what they looked like:
+
+![Each year](/montreal_bikes/clusters.png)
+
+Here is the link to one of the maps: https://flowmap.blue/1xry0bK8OAEr3gx2JB6Mr7k5gDMuVu_BL8wLH1jpn7cE?v=45.540457,-73.653655,11.18,0,0&a=0&b=1&bo=75&c=0&d=0&lt=0&lfm=ALL&col=Sunset&f=44.
+As you can see, in the flows part, I put the same stations in both columns, going from one to the other with equal weights. That is how I was able to show the clusters. This can be reproduced by running any clustering method, using the criteria of choice and later use the stations got in each cluster.
